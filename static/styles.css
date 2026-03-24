@@ -1,5 +1,27 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+}
+
 .homepageFont {
-    font-family: sans-serif, arial;
-    font-size:24px;
-    color: black;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+#mission {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+ol li {
+    margin-bottom: 16px;
+    line-height: 1.6;
 }
