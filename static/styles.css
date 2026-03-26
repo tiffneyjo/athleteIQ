@@ -55,7 +55,7 @@ ol li {
     font-weight: 500;
 }
 
-.nav-item {
+.nav-link dropdown-toggle {
     padding-left: 40px;
     padding-right: 40px;
 }
