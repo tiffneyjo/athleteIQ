@@ -56,5 +56,9 @@ ol li {
 }
 
 .nav-item {
-    margin-left: 40px;
+    margin-left: 50px;
+}
+
+.dropdown-item {
+    margin-left: 50px;
 }
