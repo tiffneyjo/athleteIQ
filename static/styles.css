@@ -25,3 +25,32 @@ ol li {
     margin-bottom: 16px;
     line-height: 1.6;
 }
+
+.homepage-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.homepage-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.homepage-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.homepage-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
