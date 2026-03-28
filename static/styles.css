@@ -3,9 +3,8 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     margin: 0;
-    padding: 0 20px;
 }
 
 .homepageFont {
@@ -26,19 +25,55 @@ ol li {
     line-height: 1.6;
 }
 
-.homepage-nav {
+.navbar-brand{
+    font-size: 20px;
+}
+
+.homepage-nav-main {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px 31px;
+    padding: 9px 61px;
     background-color: white;
-    border-bottom: 1px solid #ddd;
     width: 100%;
+}
+
+.homepage-nav-main .navbar-nav-main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-nav-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 41px;
+    background-color: white;
+    width: 100%;
+}
+
+.homepage-nav-sub .navbar-nav-sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style:none;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.homepage-nav-sub .navbar-collapse {
+    flex: 1;
 }
 
 .homepage-logo {
 
-    height: 120px;
+    height: 90px;
     width: auto;
 
 }
@@ -50,7 +85,7 @@ ol li {
     font-weight: 500;
 }
 
-.nav-link dropdown-toggle {
+.nav-link .dropdown-toggle {
     padding-left: 40px;
     padding-right: 40px;
 }
