@@ -9,27 +9,87 @@
 
     <link href="/static/styles.css" rel="stylesheet">
 
-    <title>Athlete IQ</title>
+    <title>Athlete IQ {% block title %}{% endblock %}</title>
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light border">
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Athlete IQ</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbar">
+            <div class="collapse navbar-collapse" id="navbar-main">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/resources">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/tracker">Tracker</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="/about">Our Story</a></li>
+                            <li><a class="dropdown-item" href="/mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="/team">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light border">
+<div class="container-fluid">
+<a class="navbar-brand" href="/">
+    <img src="{{ url_for('static', filename='athlete-iq-logo.png') }}" alt="Athlete IQ logo" class="homepage-logo">
+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-sub">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-sub">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="preventionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Prevention
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="preventionDropdown">
+                        <li><a class="dropdown-item" href="/tracker">Tracker</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/rehab">Rehabilitation</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                    <li><a class="dropdown-item" href="/blogs">Blogs</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> How We Help</a>
+                    <ul>
+                        <li><a class="dropdown-item" href="/community"> Community Outreach</a></li>
+                        <li><a class="dropdown-item" href="/research">Knowledge Accessibility</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+    </div>
+    </div>
+
+
+</nav>
+
+        <main class="container py-5">
+            {% block main %}{% endblock %}
+        </main>
 
 
 </body>

@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block title %}- Home{% endblock %}
+
+{% block main %}
+
+
+<body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light border">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Athlete IQ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission</a></li>
+                            <li><a class="dropdown-item" href="team.html">Team</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!-- <section class="text-center py-5">
+<p class="homepageFont"> Athlete IQ equips high-potential young athletes with accurate, sport-specific training knowledge, so preventable preparation gaps don’t turn into injuries that cut athletic careers short. </p>
+<a href="#mission" class="btn btn-primary">Our Mission</a>
+</section>
+
+<section id="mission">
+    <h2>Athlete IQ's Mission</h2>
+    <p>We envision a youth sports system where talented athletes are not held back by preventable injuries, where training decisions are informed and proactive, and where access to evidence-based knowledge is not limited by resources, geography, or misinformation.</p>
+    <p>Long-term, we aim to build a standard for injury-aware training education that supports athletes, teams, and future coaches.</p>
+
+    <h3>Organizational Values</h3>
+    <ol>
+        <li>
+            <strong>Access to Knowledge </strong><br>
+            Athletic potential should not be limited by a lack of education. We believe all athletes deserve access to accurate, understandable information about how to prepare for their sport safely.
+        </li>
+        <li>
+            <strong>Prevention Over Reaction</strong><br>
+            We prioritize preseason readiness, risk awareness, and early education to reduce injuries before they occur, rather than reacting after damage is done.
+        </li>
+        <li>
+            <strong>Sport-Specific Understanding</strong><br>
+            Different sports create different injury risks. Training and preparation should reflect the unique demands of each sport.
+        </li>
+        <li>
+            <strong>Evidence-Informed, Age-Appropriate Education</strong><br>
+            All Athlete IQ content is designed to be appropriate for youth athletes and grounded in established sports science principles, without medical diagnosis or treatment.
+
+        </li>
+        <li>
+            <strong>Long-Term Athlete Development</strong><br>
+            We value sustainable progress and long athletic careers over short-term performance or rushed returns from injury.
+        </li>
+        <li>
+            <strong>Collaboration, Not Replacement</strong><br>
+            Athlete IQ complements coaches, physiotherapists, athletic therapists, and medical professionals by improving athlete awareness and communication, not replacing professional care.
+        </li>
+        <li>
+            <strong>Responsibility & Integrity</strong><br>
+            We are transparent about our role as an educational organization and operate with care in all youth sport environments.
+        </li>
+    </ol>
+    </section>
+-->
+
+<nav class="navbar navbar-expand-md">
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Preventions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                        <li><a class="dropdown-item" href="tracker.html">Tracker</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="rehab.html">Rehab</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                    <li><a class="dropdown-item" href="blogs.html">Blogs</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+    </div>
+
+
+</nav>
+
+</body>
+</html>
+
+
+
+
+{% endblock %}

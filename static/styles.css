@@ -36,19 +36,18 @@ ol li {
 }
 
 .homepage-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
+
+    height: 40px;
+    width: auto;
+
 }
 
-.homepage-logo img {
+.homepage-logo img{
     height: 40px;
     width: auto;
 }
 
-.homepage-links a {
+.homepage-links a{
     margin-left: 20px;
     text-decoration: none;
     color: black;
