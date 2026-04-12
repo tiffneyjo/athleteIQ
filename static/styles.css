@@ -73,7 +73,7 @@ ol li {
 
 .homepage-logo {
 
-    height: 90px;
+    height: 60px;
     width: auto;
 
 }
@@ -94,3 +94,65 @@ ol li {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.tracker_section{
+    text-align: center;
+}
+
+.tracker_title {
+    font-size: 3.5rem;
+    font-weight:bold;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+.tracker_header {
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+
+.tracker_text{
+    padding: 0px 100px;
+}
+
+#tracker_button{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: #28255E;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#tracker_button:hover {
+    background-color: #173ca0;
+}
+
+.tracker_sidebar{
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+    padding: 30px 25px;
+    border: 2px solid #28255E;
+    border-radius: 16px;
+    background-color: white;
+    min-height: 500px;
+}
+
+.progress_line{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #ddd;
+
+}
+
+.progess_title{
+    padding-top: 70px;
+}
+
+

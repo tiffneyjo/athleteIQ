@@ -7,5 +7,10 @@ def home():
     return render_template("index.html")
 
 
+@app.route("/tracker")
+def tracker():
+    return render_template("tracker.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
