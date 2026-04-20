@@ -99,6 +99,7 @@ ol li {
     text-align: center;
 }
 
+
 .tracker_title {
     font-size: 3.5rem;
     font-weight:bold;
@@ -173,4 +174,12 @@ ol li {
 .progress_item{
     text-align: left;
     margin: 10px 0px;
+}
+
+.step_block{
+    padding-bottom: 20px;
+}
+
+#tracker_form{
+
 }
