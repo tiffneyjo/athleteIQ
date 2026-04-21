@@ -95,12 +95,19 @@ ol li {
     padding-right: 10px;
 }
 
+
+
+.tracker_sectionform{
+    text-align: center;
+}
+
 .tracker_section{
     text-align: center;
 }
 
 
 .tracker_title {
+    text-align: center;
     font-size: 3.5rem;
     font-weight:bold;
     padding-bottom: 20px;
@@ -132,6 +139,12 @@ ol li {
     background-color: #173ca0;
 }
 
+#tracker_layout{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 .tracker_sidebar{
     display: flex;
     flex-direction: column;
@@ -142,6 +155,27 @@ ol li {
     background-color: white;
     min-height: 500px;
     align-items: flex-start;
+}
+
+#intake_form{
+    width: 980px;
+    padding: 30px 25px;
+    border: 2px solid #28255E;
+    border-radius: 16px;
+    background-color: white;
+    min-height: 500px;
+    align-items: flex-start;
+}
+
+.intake_text{
+    text-align: left;
+    font-size: 20px;
+}
+
+.intake_header{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight:bold;
 }
 
 .progress_line{
@@ -180,6 +214,4 @@ ol li {
     padding-bottom: 20px;
 }
 
-#tracker_form{
 
-}
