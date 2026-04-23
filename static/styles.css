@@ -170,6 +170,7 @@ ol li {
 .intake_text{
     text-align: left;
     font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .intake_header{
@@ -214,4 +215,7 @@ ol li {
     padding-bottom: 20px;
 }
 
+.form_group{
+    padding-bottom: 20px;
+}
 

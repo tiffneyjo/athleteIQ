@@ -102,17 +102,58 @@
                 </div>
 
                 <div id="intake_form">
-                    <p class="intake_header"> Step 1:</p>
-                    <p class="intake_text">What is your name?</p>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    <div class="form_step" id="step1">
+                        <div class="form_group" id="question_name">
+                            <p class="intake_header"> Step 1:</p>
+                            <p class="intake_text">What is your name?</p>
+                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                        </div>
+
+                        <div class="form_group" id="question_type">
+                            <p class="intake_text">What kind of sport do you play?</p>
+                            <select id="type" name="type">
+                                <option value="">Select a Type</option>
+                                <option value="team sport">Team Sport</option>
+                                <option value="individual sport">Individual Sport</option>
+                                <option value="combat sport">Combat Sport</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form_group" id="question_sport">
+                            <p class="intake_text">What sport do you play?</p>
+                            <select id="sport" name="sport">
+                                <option value="">Select a Sport</option>
+                                <option value="soccer">Soccer</option>
+                                <option value="basketball">Basketball</option>
+                                <option value="volleyball">Volleyball</option>
+                                <option value="wrestling">Wrestling</option>
+                                <option value="track">Track and Field</option>
+                                <option value="hockey">Hockey</option>
+                                <option value="football">Football</option>
+                                <option value="tennis">Tennis</option>
+                                <option value="badminton">Badminton</option>
+                                <option value="swimming">Swimming</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="form_group" id="role_container"></div>
+
+                        <p>What is your age range?</p>
+
+
+                    </div>
 
                 </div>
 
             </div>
+
     </section>
 
-
+<script src="{{ url_for('static', filename='script.js') }}"></script>
 
 
 {% endblock %}
